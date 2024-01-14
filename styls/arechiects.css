@@ -19,6 +19,11 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+.text-light-gray{
+    color: #727272;
+    
+}
+
 /* header styels */
 
 .header{
@@ -68,47 +73,18 @@ nav li a {
     font-size: 4rem;
     font-weight: 700;
 }
-.banner-decription{
-    color: #727272;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 400;
-}
+
 .banner img{
     width: 100%;
     margin-top: 30px;
 }
 
 
-/* Responsive Media Quary (max-width: 576px) */
-/* mobaile */
-@media screen and (max-width: 576px) {
-    .header{
-        padding: 10px;
-    }
 
-    nav{
-        flex-direction: column;
-    }
-}
-
-/* Responsive Media Quary and (min-width:576px)and (max-width: 992px) */
-/* Tablet */
-
-@media screen and (min-width:576px)and (max-width: 960px){
-    .header{
-        padding: 30px 50px;
-    }
-
-    nav{
-        flex-direction: column;
-    }
-    
-}
 /* main section-start */
 main{
     max-width:1440px;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 
 /* teams -styles */
@@ -134,7 +110,6 @@ main{
 
 .teams-content .quick-list{
     
-    color:  #727272;
     font-weight: 500;
 
 }
@@ -147,3 +122,53 @@ main{
     color: #FF900E;
     font-weight: 700;
 }
+
+
+
+
+
+/* Responsive Media Quary (max-width: 576px) */
+/* mobaile */
+@media screen and (max-width: 576px) {
+    .header{
+        padding: 10px;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+    .teams-container{
+        flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    .teams-content{
+        padding: 15px;
+    }
+}
+
+/* Responsive Media Quary and (min-width:576px)and (max-width: 992px) */
+/* Tablet */
+
+@media screen and (min-width:576px)and (max-width: 960px){
+    .header {
+        padding: 30px 50px;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+    .teams-container{
+        flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    .teams-content{
+        padding: 30px;
+    }
+}
+    
