@@ -5,14 +5,14 @@
 /* sheared styles */
 
 .btn-primary{
-    width: 180px;
-    height: 64px;
+    padding: 20px 25px;
     border-radius: 8px;
     background: #FF900E;
     border:none;
     color: #FFF;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
 *{
@@ -74,4 +74,76 @@ nav li a {
     font-size: 1rem;
     font-weight: 400;
 }
+.banner img{
+    width: 100%;
+    margin-top: 30px;
+}
 
+
+/* Responsive Media Quary (max-width: 576px) */
+/* mobaile */
+@media screen and (max-width: 576px) {
+    .header{
+        padding: 10px;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+}
+
+/* Responsive Media Quary and (min-width:576px)and (max-width: 992px) */
+/* Tablet */
+
+@media screen and (min-width:576px)and (max-width: 960px){
+    .header{
+        padding: 30px 50px;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+    
+}
+/* main section-start */
+main{
+    max-width:1440px;
+    margin: 0 auto;
+}
+
+/* teams -styles */
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+
+.teams-content{
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+.team-title{
+    font-size: 2.8rem;
+}
+
+.teams-content .quick-list{
+    
+    color:  #727272;
+    font-weight: 500;
+
+}
+.teams-content .of-our{
+    color: #131313;
+    font-weight: 700;
+
+}
+.teams-content .features{
+    color: #FF900E;
+    font-weight: 700;
+}
